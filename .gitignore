@@ -1,0 +1,9 @@
+.venv
+.vscode
+.env
+.cursor
+*__pycache__*
+chroma_store
+logs
+.qodo
+translation_output

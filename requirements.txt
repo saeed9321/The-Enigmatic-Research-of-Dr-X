@@ -1,0 +1,62 @@
+# Requirements for RAG (Retrieval-Augmented Generation) System
+# Tested with Python 3.10 on Apple Silicon M3 Pro
+# Last updated: 2025-04-17
+
+###############################
+# Core Dependencies
+###############################
+numpy==1.24.2              # Fundamental package for array computing
+pandas==2.0.0              # Data analysis and manipulation
+tqdm==4.65.0               # Progress bars for CLI
+
+###############################
+# Document Processing
+###############################
+PyMuPDF==1.25.5            # PDF text extraction
+python-docx==1.1.0         # Word document processing  
+openpyxl==3.1.5            # Excel file processing
+langdetect==1.0.9          # Language detection
+
+###############################
+# NLP & Text Processing
+###############################
+transformers==4.50.3       # Hugging Face models
+tiktoken==0.5.1            # Tokenization
+sentence_transformers==4.0.2 # Sentence embeddings
+rouge-score==0.1.2         # Summarization evaluation
+
+###############################
+# Vector Database & RAG
+###############################
+chromadb==0.4.24           # Vector database
+langchain==0.3.1           # LLM orchestration
+langchain_ollama==0.3.1    # Ollama integration
+
+###############################
+# Deep Learning
+###############################
+torch==2.2.2               # PyTorch framework
+einops==0.8.1              # Tensor operations
+
+###############################
+# Utilities
+###############################
+colorama==0.4.6            # Terminal coloring
+rich==13.7.0               # Enhanced terminal output
+inquirer==3.1.3            # CLI interfaces
+matplotlib==3.10.1         # Visualization
+
+###############################
+# OS-Specific Dependencies
+###############################
+onnxruntime==1.15.0; sys_platform == 'win32' # Windows requirement
+pysqlite3-binary==0.5.4; sys_platform == 'linux' # Linux requirement
+
+###############################
+# Development & Testing
+###############################
+pytest==7.4.0              # Testing framework
+pytest-cov==4.1.0          # Coverage reporting
+black==23.9.1              # Code formatting
+mypy==1.5.1                # Static type checking
+
